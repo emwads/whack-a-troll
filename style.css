@@ -1,4 +1,5 @@
 
 canvas {
+  border: 1px solid green;
   display: block;
   margin: 50px auto; }
