@@ -9,26 +9,35 @@
   </head>
   <body>
 
-    <section class="intro">
+    <section id="introScreen" class="hidden">
       <h2> this is game info </h2>
     </section>
 
-    <section class='game'>
+    <section id='gameScreen'>
       <header>
         <h1> Whack-a-troll </h1>
         <h3>score</h3>
-        <span id="score1"></span> <br />
-        <span id="score2"></span>
+        <table>
+          <tr>
+            <td >player 1</td>
+            <td id="score1">0</td>
+          </tr>
+          <tr>
+            <td>player 2</td>
+            <td id="score2">0</td>
+          </tr>
+        </table>
+
         <h3>time</h3>
         <span id="time"></span>
 
-        <button id="start">Start Game</button>
+        <button id="start-button" class="hidden">Start Game</button>
       </header>
 
       <canvas id="myCanvas" width="700" height="500"></canvas>
     </section>
 
-    <section class="end">
+    <section id="endScreen" class="hidden">
       <h2>game over!</h2>
     </section>
   </body>

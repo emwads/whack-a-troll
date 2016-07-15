@@ -1,19 +1,20 @@
 
 canvas {
-  border: 1px solid green;
+  border: 1px solid grey;
   display: block;
-  margin: 50px auto;
-
-
+  margin: 10px auto;
+  background-color: green;
 }
 
 
 header {
   height: 200px;
-
 }
 
-header h3 {
+h3 {
   display: inline-block;
+}
 
+.hidden{
+  display: none;;
 }
