@@ -8,37 +8,47 @@
     <script src="./lib/keymaster.js" charset="utf-8"></script>
   </head>
   <body>
+      <h1> Whack-a-Troll </h1>
 
-    <section id="introScreen" class="hidden">
-      <h2> this is game info </h2>
-    </section>
 
     <section id='gameScreen'>
-      <header>
-        <h1> Whack-a-troll </h1>
-        <h3>score</h3>
+      <article>
+        <button id="start-button" class="hidden">Start Game</button>
+        <h2>Score</h2>
         <table>
           <tr>
-            <td >player 1</td>
+            <td >player 1: </td>
             <td id="score1">0</td>
           </tr>
           <tr>
-            <td>player 2</td>
+            <td>player 2: </td>
             <td id="score2">0</td>
           </tr>
         </table>
 
-        <h3>time</h3>
-        <span id="time"></span>
+        <h3>Time Left: </h3>
+        <span id="time">--</span>
 
-        <button id="start-button" class="hidden">Start Game</button>
-      </header>
+        <div class='directions'>
+          <h2>Directions</h2>
+          <p>
+            Pesky Trolls have invaded your fields! Compete against another player
+             to see how many you can smack away! However, be careful not to harm
+             the cute little moles...
+          </p>
+          <p>
+            Player 1: Use w, a, s, d keys to move your blue mallet and q or e to
+            smack
+          </p>
+          <p>
+            Player 2: Use p, l, ;, ' keys to move your blue mallet and o or ] to
+            smack
+          </p>
+        </div>
+      </article>
 
       <canvas id="myCanvas" width="700" height="500"></canvas>
     </section>
 
-    <section id="endScreen" class="hidden">
-      <h2>game over!</h2>
-    </section>
   </body>
 </html>

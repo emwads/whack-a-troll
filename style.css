@@ -1,20 +1,77 @@
+body {
+  font-family: sans-serif;
+  background-color:  #e6e6e6;
+}
 
 canvas {
   border: 1px solid grey;
   display: block;
-  margin: 10px auto;
-  background-color: green;
+  background-color: lightgreen;
+  background-image: url("./image/hill.png");
 }
 
 
-header {
-  height: 200px;
+canvas, article {
+  margin: 20px;
+}
+
+article {
+  width: 250px;
+}
+
+#score1, #score2 {
+  font-weight: bolder;
+}
+
+.directions {
+  background-color: white;
+  border: 1px dashed grey;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+td{
+  padding: 0 5px;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  min-height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+img {
+  display: inline-block;
 }
 
 h3 {
   display: inline-block;
 }
 
+h2 {
+  display: block;
+  margin: 10px 0;
+}
+
+h1 {
+    margin: 10px auto;
+    width: 300px;
+    text-align: center;
+
+}
+
 .hidden{
   display: none;;
+}
+
+#gameScreen {
+  display: flex;
+  justify-content: center;
+
 }
