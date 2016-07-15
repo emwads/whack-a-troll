@@ -2,4 +2,18 @@
 canvas {
   border: 1px solid green;
   display: block;
-  margin: 50px auto; }
+  margin: 50px auto;
+
+
+}
+
+
+header {
+  height: 200px;
+
+}
+
+header h3 {
+  display: inline-block;
+
+}

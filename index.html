@@ -8,7 +8,28 @@
     <script src="./lib/keymaster.js" charset="utf-8"></script>
   </head>
   <body>
-    <canvas id="myCanvas" width="700" height="500"></canvas>
 
+    <section class="intro">
+      <h2> this is game info </h2>
+    </section>
+
+    <section class='game'>
+      <header>
+        <h1> Whack-a-troll </h1>
+        <h3>score</h3>
+        <span id="score1"></span> <br />
+        <span id="score2"></span>
+        <h3>time</h3>
+        <span id="time"></span>
+
+        <button id="start">Start Game</button>
+      </header>
+
+      <canvas id="myCanvas" width="700" height="500"></canvas>
+    </section>
+
+    <section class="end">
+      <h2>game over!</h2>
+    </section>
   </body>
 </html>
