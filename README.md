@@ -1,6 +1,10 @@
 # Whack-a-Troll
 
-[link]
+
+[Live Link Here][liveLink]
+
+[liveLink]:https://emwads.github.io/whack-a-troll/
+>>>>>>> 307454dda6289f283f0a50522c908bf0bf8c4c49
 
 Whack-a-Troll is a take on the classic game, using JavaScript to control an
 HTML canvas element. Enjoy
