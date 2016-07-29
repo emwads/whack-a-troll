@@ -12,14 +12,18 @@ canvas {
   max-height: 500px;
 }
 
-
-
 canvas, article {
   margin: 20px;
 }
 
 article {
   width: 250px;
+}
+
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #score1, #score2 {
@@ -32,6 +36,11 @@ article {
   padding: 0 10px;
   border-radius: 10px;
   font-size: 13px;
+}
+
+.directions img {
+  height: 75px;
+  padding: 15px 25px 20px 15px;2  /*float: right;*/
 }
 
 td{
@@ -51,6 +60,11 @@ button {
 
 img {
   display: inline-block;
+}
+
+h4 {
+  margin: 0;
+
 }
 
 h3 {
