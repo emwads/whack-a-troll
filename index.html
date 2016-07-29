@@ -8,28 +8,17 @@
     <script src="./lib/keymaster.js" charset="utf-8"></script>
   </head>
   <body>
+    <header>
+
       <h1> Whack-a-Troll </h1>
 
 
-    <section id='gameScreen'>
+    </header>
+
+    <section class='game-screen'>
       <article>
-        <button id="start-button" class="hidden">Start Game</button>
-        <h2>Score</h2>
-        <table>
-          <tr>
-            <td >player 1: </td>
-            <td id="score1">0</td>
-          </tr>
-          <tr>
-            <td>player 2: </td>
-            <td id="score2">0</td>
-          </tr>
-        </table>
 
-        <h3>Time Left: </h3>
-        <span id="time">--</span>
-
-        <div class='directions'>
+        <aside class='directions'>
           <h2>Directions</h2>
           <p>
             Pesky Trolls have invaded your fields! Compete against another player
@@ -52,10 +41,26 @@
             smack
             <img src="image/wasd2.png" alt="controls" />
           </p>
-        </div>
+        </aside>
       </article>
 
-      <canvas id="myCanvas" width="700" height="500"></canvas>
+
+      <section class='game-canvas'>
+
+        <div class="game-info">
+
+          <span>Player 1: </span>
+          <span id="score1">0</span>
+          <span>Player 2: </span>
+          <span id="score2">0</span>
+          <span>Time Left</span>
+          <span id="time">--</span>
+        </div>
+
+        <canvas id="myCanvas" width="700" height="500"></canvas>
+        <button id="start-button" class="hidden">Start Game</button>
+
+      </section>
     </section>
 
   </body>

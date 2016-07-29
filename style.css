@@ -1,6 +1,11 @@
 body {
   font-family: sans-serif;
   background-color:  #e6e6e6;
+  font-size: 18px;
+}
+
+p {
+  text-align: center;
 }
 
 canvas {
@@ -12,11 +17,21 @@ canvas {
   max-height: 500px;
 }
 
-canvas, article {
+.game-canvas {
+  margin: 0 20px;
+  position: relative;
+}
+
+
+header {
+  width: 100%
+}
+article {
   margin: 20px;
 }
 
-article {
+aside {
+  /*min-width: 250px;*/
   width: 250px;
 }
 
@@ -30,33 +45,48 @@ article {
   font-weight: bolder;
 }
 
+#score1 {
+  color: blue;
+}
+
+#score2 {
+  color: red;
+}
+
+
+
 .directions {
   background-color: white;
   border: 1px dashed grey;
   padding: 0 10px;
   border-radius: 10px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .directions img {
   height: 75px;
-  padding: 15px 25px 20px 15px;2  /*float: right;*/
+  padding: 15px 25px 20px 15px;  /*float: right;*/
 }
 
-td{
+span {
   padding: 0 5px;
 }
 
 button {
   cursor: pointer;
-  width: 100%;
+  width: 200px;
   background-color: blue;
   color: white;
   min-height: 50px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
+  position: absolute;
+  top: 250px;
+  left: 250px;
 }
+
+.overlay
 
 img {
   display: inline-block;
@@ -77,18 +107,33 @@ h2 {
 }
 
 h1 {
-    margin: 10px auto;
-    width: 300px;
     text-align: center;
-
 }
 
 .hidden{
-  display: none;;
+  display: none;
 }
 
-#gameScreen {
+
+
+.game-info {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+  height: 20px;
+  width: 75%;
+}
 
+.game-info span:nth-child(odd) {
+  width: 100px;
+}
+.game-info span:nth-child(even) {
+  width: 50px;
+}
+
+
+.game-screen {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;;
 }
