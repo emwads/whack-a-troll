@@ -47,18 +47,19 @@
 
       <section class='game-canvas'>
 
-        <div class="game-info">
+        <div id="game-info" class="hidden">
 
           <span>Player 1: </span>
           <span id="score1">0</span>
-          <span>Player 2: </span>
+          <span id="player2">Player 2: </span>
           <span id="score2">0</span>
-          <span>Time Left</span>
+          <span>Time Left: </span>
           <span id="time">--</span>
         </div>
 
         <canvas id="myCanvas" width="700" height="500"></canvas>
-        <button id="start-button" class="hidden">Start Game</button>
+        <button id="start-button-ai" class="hidden">Start 1p Game</button>
+        <button id="start-button" class="hidden">Start 2p Game</button>
 
       </section>
     </section>

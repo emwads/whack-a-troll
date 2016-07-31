@@ -82,8 +82,19 @@ button {
   border-radius: 5px;
   font-size: 20px;
   position: absolute;
-  top: 250px;
-  left: 250px;
+  top: 275px;
+}
+
+button:hover {
+  background-color: purple;
+}
+
+#start-button-ai {
+  left: 100px;
+}
+
+#start-button {
+  left: 400px;
 }
 
 .overlay
@@ -117,11 +128,11 @@ h1 {
 
 
 .game-info {
-  margin: 0 auto;
+  margin: 5px auto;
   display: flex;
+  position: absolute;
   justify-content: center;
-  height: 20px;
-  width: 75%;
+  width: 100%;
 }
 
 .game-info span:nth-child(odd) {
