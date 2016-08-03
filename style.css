@@ -5,6 +5,11 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+  color: navy;
+}
+
 p {
   text-align: center;
   margin: 5px;
@@ -17,6 +22,9 @@ canvas {
   background-image: url("./image/hill.png");
   max-width: 700px;
   max-height: 500px;
+  margin: 0 0 60px 0;
+  box-sizing: border-box;
+  z-index: -5;
 }
 
 .game-canvas {
@@ -63,6 +71,8 @@ aside {
   padding: 0 10px;
   border-radius: 10px;
   font-size: 14px;
+  margin: 0 15px 60px 0;
+  position: relative;
 }
 
 .directions img {
@@ -70,6 +80,78 @@ aside {
   padding: 10px;
   /*float: right;*/
 }
+
+figure {
+  margin: 0;
+}
+
+.directions a {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  pointer-events: all;
+}
+
+.directions:hover a {
+  top: -90px;
+}
+.directions figure:hover {
+  top: -90px;
+}
+
+.directions a .bubble {
+  position: relative;
+  display: none;
+  top: -8px;
+  left: 70px;
+  width: 100px;
+  height: 55px;
+}
+
+.directions:hover a .bubble {
+  display: block;
+}
+.directions figure:hover .bubble {
+  display: block;
+}
+
+.directions a .cat {
+  position: relative;
+  height:70px;
+  top: -10px;
+  z-index: -1;
+  animation: peak 7s linear infinite;
+  transition: all 0.3s;
+}
+
+.directions:hover a .cat {
+  top: -40px;
+  animation: waive 6s linear infinite;
+}
+.directions figure:hover .cat {
+  top: -40px;
+  animation: waive 6s linear infinite;
+}
+
+@keyframes waive {
+    0%   {transform: rotateZ(0deg);}
+    10%  {transform: rotateZ(0deg);}
+    15%  {transform: rotateZ(10deg);}
+    20%  {transform: rotateZ(-10deg);}
+    25%  {transform: rotateZ(10deg);}
+    30%  {transform: rotateZ(-10deg);}
+    35%  {transform: rotateZ(0deg);}
+}
+
+@keyframes peak {
+    0%    {transform: translateY(0px);}
+    40%   {transform: translateY(0px);}
+    45%   {transform: translateY(-15px);}
+    70%   {transform: translateY(-15px);}
+    75%   {transform: translateY(0px);}
+    100%  {transform: translateY(0px);}
+}
+
 
 span {
   padding: 0 5px;
@@ -107,13 +189,16 @@ img {
 }
 
 h4 {
-  margin: 0;
+  margin: 10px 0;
   font-family: 'Shadows Into Light', cursive;
   letter-spacing: 2px;
 }
 
 h3 {
-  display: inline-block;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 4px;
+  margin: 0 0 15px  0;
 }
 
 h2 {
@@ -127,6 +212,7 @@ h1 {
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 4px;
+    margin: 0;
 }
 
 .hidden{
